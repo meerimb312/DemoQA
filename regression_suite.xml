@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression suite">
+    <test verbose="2" preserve-order="true" name="C:/sdet2024/DemoQAWinter24/src/main/resources/tests_suites">
+        <classes>
+            <class name="ProgressBarTest"></class>
+            <class name="ButtonsTest"></class>
+        </classes>
+    </test>
+</suite>
