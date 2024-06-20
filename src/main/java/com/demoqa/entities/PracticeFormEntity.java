@@ -1,7 +1,6 @@
 package com.demoqa.entities;
 
 import lombok.*;
-import org.openqa.selenium.WebElement;
 
 @Getter
 @Setter

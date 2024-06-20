@@ -4,13 +4,13 @@ import com.demoqa.entities.Employee;
 import com.demoqa.entities.PracticeFormEntity;
 import com.demoqa.entities.TextBoxEntity;
 import com.github.javafaker.Faker;
-
-import java.util.Arrays;
+import io.qameta.allure.Step;
 
 public class RandomUtils {
 
     Faker faker = new Faker();
 
+    @Step("Generate random person data")
     public TextBoxEntity generateRandomTextBoxEntity() {
 
         TextBoxEntity textBoxEntity = new TextBoxEntity();
@@ -21,6 +21,7 @@ public class RandomUtils {
         return textBoxEntity;
     }
 
+    @Step("Generate random person data for practice form")
     public PracticeFormEntity generateRandomPracticeFormEntity() {
 
         PracticeFormEntity practiceFormEntity = new PracticeFormEntity();
@@ -43,6 +44,7 @@ public class RandomUtils {
 
     }
 
+    @Step("Create random mock Employee data")
     public Employee createMokEmployee() {
 
         Employee employee = new Employee();

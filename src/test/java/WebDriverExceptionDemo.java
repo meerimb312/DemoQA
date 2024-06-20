@@ -1,6 +1,4 @@
 import com.demoqa.drivers.DriverManager;
-import com.demoqa.enums.EndPoints;
-import com.demoqa.utils.ConfigReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.SessionId;
@@ -14,12 +12,11 @@ public class WebDriverExceptionDemo {
     public void test1() {
         driver.get("https://demoqa.com/webtables");
         SessionId sessionId = ((RemoteWebDriver) driver).getSessionId();
-        System.out.println("Session id is: "+sessionId);
+        System.out.println("Session id is: " + sessionId);
 
         driver.close();
         driver.quit();
-        System.out.println("After quit session ID is: "+sessionId);
-//        driver.get("https://demoqa.com/webtables");
+        System.out.println("After quit session ID is: " + sessionId);
     }
 
 }

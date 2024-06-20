@@ -45,6 +45,7 @@ public class WebTablePage extends BasePage {
 
     //div[@class='action-buttons']//span[@title='Edit']
 
+    @Step("Check person by e-mail and add person if e-mail doesn't exist")
     public ArrayList<WebElement> email() {
         List<WebElement> rows = DriverManager.getDriver().findElements(By.id("userEmail"));
         ArrayList<WebElement> email = new ArrayList<>();

@@ -1,10 +1,8 @@
 import org.testng.annotations.Test;
 
-import java.util.List;
-
 public class SelectDemoTest extends BaseTest {
 
-   @Test
+    @Test
     void testSelectValue() {
 
         browserHelper.open("https://demoqa.com/select-menu");

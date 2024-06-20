@@ -1,16 +1,23 @@
 import com.demoqa.entities.Employee;
 import com.demoqa.enums.EndPoints;
 import com.demoqa.utils.ConfigReader;
+import io.qameta.allure.*;
+import io.qameta.allure.testng.Tag;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 public class WebTableTest extends BaseTest {
 
-    @Test(description = "Practice form test")
+    @Test(groups = {"Regression", "API", "1782"})
+    @Description("Verify that WebTable form work correctly")
+    @Owner("MeerimB")
+    @Tag("Smoke")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("GCPINT-8880")
     public void testWebTable() {
 
-        browserHelper.open(ConfigReader.getValue("baseURL") + EndPoints.PRACTICE_FORM.getEndpoint());
+        browserHelper.open(ConfigReader.getValue("baseURL") + EndPoints.WEBTABLES.getEndpoint());
         Employee employee = randomUtils.createMokEmployee();
 
         // Добавление первого сотрудника

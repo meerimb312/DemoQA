@@ -1,6 +1,7 @@
 package com.demoqa.pages;
 
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -16,6 +17,7 @@ public class SidePanelPage extends BasePage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginBtn;
 
+    @Step("Login method")
     public SidePanelPage signIn(String userName, String password) {
         webElementActions.sendKeys(userNameInput, userName)
                 .sendKeys(passwordInput, password)

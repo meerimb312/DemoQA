@@ -4,12 +4,9 @@ import com.demoqa.pages.DemoQAPages;
 import com.demoqa.pages.SelectPage;
 import com.demoqa.pages.SidePanelPage;
 import com.demoqa.utils.RandomUtils;
-import io.cucumber.java.ro.Si;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
 

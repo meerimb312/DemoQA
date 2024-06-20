@@ -4,11 +4,8 @@ import lombok.Getter;
 
 public enum EndPoints {
     ALERT("/alerts"),
-
     FRAMES("/frames"),
-
     TEXTBOX("/text-box"),
-
     WEBTABLES("/webtables"),
     BUTTONS("/buttons"),
     MENU("/menu"),

@@ -2,7 +2,6 @@ package com.demoqa.drivers;
 
 import com.demoqa.utils.ConfigReader;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.safari.SafariDriver;
 
 public class DriverManager {
 

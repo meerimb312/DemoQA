@@ -6,9 +6,18 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="C:/sdet2024/DemoQAWinter24/src/main/resources/tests_suites">
         <classes>
+            <class name="AlertTest"></class>
+            <class name="BrowserHelperTest"></class>
+            <class name="ButtonsTest"></class>
+            <class name="DemoTest"></class>
+            <class name="FrameTest"></class>
+            <class name="PracticeFormTest"></class>
+            <class name="ProgressBarTest"></class>
+            <class name="SelectDemoTest"></class>
+            <class name="MenuTest"></class>
             <class name="TextBoxTest"></class>
-<!--            <class name="FrameTest"></class>-->
-<!--            <class name="ButtonsTest"></class>-->
+            <class name="WebTableTest"></class>
+            <class name="SidePanelDataTest"></class>
 
         </classes>
     </test>
