@@ -32,7 +32,7 @@ pipeline {
                     def project = params.PROJECT ?: 'DemoQA'
                     def testSuite = params.TEST_SUITE
                     def testType = params.TEST_TYPE
-                    def testNumber = params.TESTCASE_NUMBER
+                    def testCaseId = params.TEST_CASE_ID
 
                     def suiteFiles = []
                     if (testSuite == 'All') {
@@ -42,14 +42,14 @@ pipeline {
                     }
 
                     def groups = []
-                    if (testType == 'TC_NUMBER' && testNumber) {
-                        groups = [testNumber]
+                    if (testType == 'TEST_CASE_ID' && testCaseId) {
+                        groups = [testCaseId]
                     } else {
                         groups = [testType]
                     }
 
                     suiteFiles.each { suiteFile ->
-                        sh "mvn clean test -P ${project} -DsuiteXmlFile=${suiteFile} -Dgroups=${groups.join(',')} -DfailIfNoTests=false"
+                        sh "mvn clean test -P ${testSuite} -DsuiteXmlFile=${suiteFile} -Dgroups=${groups.join(',')} -DfailIfNoTests=false"
                     }
                 }
             }
