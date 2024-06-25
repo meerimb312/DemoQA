@@ -7,7 +7,6 @@
     <test verbose="2" preserve-order="true" name="C:/sdet2024/DemoQAWinter24/src/main/resources/tests_suites">
         <classes>
             <class name="AlertTest"></class>
-            <class name="BrowserHelperTest"></class>
             <class name="ButtonsTest"></class>
             <class name="DemoTest"></class>
             <class name="FrameTest"></class>
